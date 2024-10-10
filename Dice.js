@@ -10,7 +10,7 @@ submit.onclick = function roll(){
     for(let i = 0;i<num.value;i++){
         let value = Math.trunc(Math.random()*6+1)
         values.push(value);
-        dimages.push(`<img src="Dimages/${value}.png">`) 
+        dimages.push(`<img src="${value}.png">`) 
     }
     Result.textContent=`Result: ${values.join(',')}`
     images.innerHTML=dimages.join(' ')
